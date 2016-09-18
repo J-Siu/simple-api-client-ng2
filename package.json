@@ -1,0 +1,55 @@
+{
+	"name": "simple-api-client-ng2",
+	"description": "Angular 2 simple api client service that work with simple-api-node",
+	"main": "lib/simple-api-client.js",
+	"version": "1.2.0",
+	"license": "MIT",
+	"author": {
+		"name": "John, Sing Dao, Siu",
+		"email": "js@johnsiu.com",
+		"url": "https://johnsiu.com/"
+	},
+	"keywords": [
+		"2",
+		"angular",
+		"angular2",
+		"api",
+		"client",
+		"example",
+		"ng",
+		"ng2",
+		"node",
+		"simple"
+	],
+	"bugs": {
+		"url": "https://github.com/J-Siu/simple-api-client-ng2/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/J-Siu/simple-api-client-ng2.git"
+	},
+	"scripts": {
+		"build": "rm -rf lib && tsc",
+		"typings": "typings install"
+	},
+	"dependencies": {
+		"url-join": "*"
+	},
+	"peerDependencies": {
+		"@angular/common": "^2.0.0",
+		"@angular/core": "^2.0.0",
+		"@angular/http": "^2.0.0",
+		"@angular/platform-browser": "^2.0.0",
+		"rxjs": "^5.0.0-beta.12",
+		"zone.js": "^0.6.6"
+	},
+	"devDependencies": {
+		"@angular/common": "^2.0.0",
+		"@angular/core": "^2.0.0",
+		"@angular/http": "^2.0.0",
+		"@angular/platform-browser": "^2.0.0",
+		"rxjs": "5.0.0-beta.12",
+		"typings": "*",
+		"zone.js": "^0.6.6"
+	}
+}
