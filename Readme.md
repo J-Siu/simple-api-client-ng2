@@ -5,6 +5,20 @@ which work with [simple-api-express](https://github.com/J-Siu/simple-api-express
 
 ## Index
 
+- [Install](#install)
+- [Usage Flow](#usage-flow)
+	- [Import into Angular 2 application (typescript)](#import-into-angular-2-application-typescript)
+	- [API](#api)
+		- [SimpleApiClient.get](#simpleapiclientget)
+		- [SimpleApiClient.list](#simpleapiclientlist)
+		- [SimpleApiObj.call](#simpleapiobjcall)
+		- [SimpleApiObj.setErrorHandler](#simpleapiobjseterrorhandler)
+	- [Error Handling](#error-handling)
+- [Example](#example)
+- [Contributors](#contributors)
+- [Changelog](#changelog)
+- [License](#license)
+
 ## Install
 
 ```
