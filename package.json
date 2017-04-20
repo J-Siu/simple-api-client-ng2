@@ -2,7 +2,7 @@
   "name": "simple-api-client-ng2",
   "description": "Angular 2 simple api client service that work with simple-api-express",
   "main": "lib/simple-api-client.js",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "license": "MIT",
   "author": {
     "name": "John, Sing Dao, Siu",
