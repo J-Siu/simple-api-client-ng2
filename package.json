@@ -35,12 +35,7 @@
     "url-join": "*"
   },
   "peerDependencies": {
-    "@angular/common": "^2.0.0",
-    "@angular/core": "^2.0.0",
-    "@angular/http": "^2.0.0",
-    "@angular/platform-browser": "^2.0.0",
-    "rxjs": "^5.0.0-beta.12",
-    "zone.js": "^0.6.6"
+    "@angular/core": ">=2.0.0"
   },
   "devDependencies": {
     "@angular/common": "^2.0.0",
