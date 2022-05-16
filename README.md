@@ -1,7 +1,7 @@
-# simple-api-client-ng2
+# Angular Simple API Client [![Paypal donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/donate/?business=HZF49NM9D35SJ&no_recurring=0&currency_code=CAD)
 
 [simple-api-client-ng2](https://github.com/J-Siu/simple-api-client-ng2) is an Angular 2 api service,
-which work with [simple-api-express](https://github.com/J-Siu/simple-api-express), an expressjs api handler.
+which work with [simple-api-express](https://github.com/J-Siu/simple-api-express), an ExpressJs api handler.
 
 > To enable faster update, simple-api-client-ng2 switched to Angular CLI starting 8.2.0 and use new repository https://github.com/J-Siu/ng2-simple-api-lib/
 >
@@ -9,31 +9,34 @@ which work with [simple-api-express](https://github.com/J-Siu/simple-api-express
 >
 > All version < 8.2.0 are in old repository https://github.com/J-Siu/simple-api-client-ng2/
 
-## Index
+### Table Of Content
+<!-- TOC -->
 
 - [Install](#install)
 - [Usage Flow](#usage-flow)
-	- [Import into Angular 2 application (typescript)](#import-into-angular-2-application-typescript)
-	- [API](#api)
-		- [SimpleApiClient.get](#simpleapiclientget)
-		- [SimpleApiClient.list](#simpleapiclientlist)
-		- [SimpleApiObj.call](#simpleapiobjcall)
-		- [SimpleApiObj.setErrorHandler](#simpleapiobjseterrorhandler)
-	- [Error Handling](#error-handling)
+  - [Import into Angular 2 application typescript](#import-into-angular-2-application-typescript)
+  - [API](#api)
+    - [SimpleApiClient.get](#simpleapiclientget)
+    - [SimpleApiClient.list](#simpleapiclientlist)
+    - [SimpleApiObj.call](#simpleapiobjcall)
+    - [SimpleApiObj.setErrorHandler](#simpleapiobjseterrorhandler)
+  - [Error Handling](#error-handling)
 - [Example](#example)
 - [Contributors](#contributors)
 - [Changelog](#changelog)
 - [License](#license)
 
-## Install
+<!-- /TOC -->
+
+### Install
 
 ```
 npm install simple-api-client-ng2
 ```
 
-## Usage Flow
+### Usage Flow
 
-### Import into Angular 2 application (typescript)
+#### Import into Angular 2 application (typescript)
 
 `simple-api-client-ng2` is implemented as Angular 2 injectable service name __SimpleApiClient__.
 
@@ -75,9 +78,9 @@ export class ChildComponent implement OnInit {
 }
 ```
 
-### API
+#### API
 
-#### SimpleApiClient.get
+##### SimpleApiClient.get
 
 `SimpleApiClient.get(baseUrl: string = '/'): SimpleApiObj`
 will return a SimpleApiObj configure with `baseUrl`.
@@ -87,11 +90,11 @@ Previous created SimpleApiObj will be returned if the same baseUrl is used.
 		this.apiObject = this.api.get('/demo');
 ```
 
-#### SimpleApiClient.list
+##### SimpleApiClient.list
 
 `SimpleApiClient.list(): string[]` will return a string array containing the baseUrl of all SimpleApiObj created.
 
-#### SimpleApiObj.call
+##### SimpleApiObj.call
 
 `SimpleApiObj.call(method, params, callback, errorHandler)`
 
@@ -100,17 +103,17 @@ Previous created SimpleApiObj will be returned if the same baseUrl is used.
 * __callback: (result: any) => void__ Callback function for handling api result
 *	__errorHandler: (error: any) => void = this.errorHandler__ Optional error handler to handle api call error
 
-#### SimpleApiObj.setErrorHandler
+##### SimpleApiObj.setErrorHandler
 
 `SimpleApiObj.setErrorHandler(handler: (any) => void)` replace SimpleApiObj default error handler with the specified one.
 
-### Error Handling
+#### Error Handling
 
 For detail example on error handling, please refer to
 [error.component.ts](https://github.com/J-Siu/simple-api-example-ng2-express/blob/master/public/app/error.component.ts)
 contain in full example below
 
-## Example
+### Example
 
 A detail example for both
 [simple-api-express](https://github.com/J-Siu/simple-api-express) and
@@ -118,11 +121,11 @@ A detail example for both
 
 - [simple-api-example-ng2-express](https://github.com/J-Siu/simple-api-example-ng2-express)
 
-## Contributors
+### Contributors
 
 * [John Sing Dao Siu](https://github.com/J-Siu)
 
-## Changelog
+### Changelog
 
 * 1.2.0
 	- Publish to NPM.
@@ -133,7 +136,7 @@ A detail example for both
 	- Due to the rapid release cycle of Angular, to minimize update purely due to `peerDependencies`, it is modified as follow:
 		`"peerDependencies": { "@angular/core": ">=2.4.0" }`
 
-## License
+### License
 
 The MIT License
 
